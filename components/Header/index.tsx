@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <header className='relative'>
       <div className='z-20 flex md:grid md:grid-cols-4 justify-between h-20 items-center px-4 md:px-8 bg-gradient-to-r from-gray-700 to-gray-800 border-b-2 border-gray-400'>
-        <Link href='/' className='flex items-center md:col-span-3'>
+        <Link href='/' className='flex items-center md:col-span-3 w-fit'>
           <Logo icon={<FaPlayCircle size={32} />}>Movie Time</Logo>
         </Link>
         <nav className='hidden  md:flex md:justify-end items-center gap-7 text-white'>
@@ -27,13 +27,13 @@ const Header: React.FC = () => {
           ) : (
             <>
               <Link href='/auth/login' className='hover:text-gray-300'>
-                Login
+                Giriş Yap
               </Link>
               <Link
                 href='/auth/sign-up'
                 className='bg-gray-700 rounded px-4 md:px-6 py-2 hover:bg-gray-700/80 font-semibold'
               >
-                Sign Up
+                Kayıt Ol
               </Link>
             </>
           )}
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
           )}
         </div>
       </div>
-      {/* <Transition
+      <Transition
         className='block bg-gray-600 absolute top-full w-full h-screen z-20 px-2 pt-6'
         show={isMobile}
         as={Fragment}
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           <p>test</p>
           <p>test</p>
         </div>
-      </Transition> */}
+      </Transition>
     </header>
   );
 };
