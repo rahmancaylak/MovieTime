@@ -1,0 +1,6 @@
+.error{
+    @apply
+    text-red-500
+    text-xs
+    italic
+}
